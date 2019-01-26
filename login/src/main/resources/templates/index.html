@@ -13,6 +13,10 @@
     <div>
         <p>Logged in as:</p><p th:text="${name}">
     </div>
+    <form action="/logout" method="post">
+        <button type=submit>LogOut</button>
+        <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>
+    </form>
 </div>
 </body>
 </html>
