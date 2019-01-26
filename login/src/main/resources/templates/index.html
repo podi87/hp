@@ -2,17 +2,17 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="utf-8"/>
-    <title>LoggingIn</title>
+    <title>LogIn</title>
 </head>
 <body>
-<h1>LoggingIn</h1>
-<div class="container unauthenticated" >
+<h1>LogIn</h1>
+<div class="container unauthenticated" th:unless="${authenticated}">
     <a href="/login">click here</a>
 </div>
-<div>
-    <p>Logged in as:</p><p>
-</div>
 <div class="container authenticated" >
+    <div>
+        <p>Logged in as:</p><p>
+    </div>
 </div>
 </body>
 </html>

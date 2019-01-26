@@ -1,4 +1,4 @@
-facebook:
+security:
   oauth2:
     client:
       clientId: ${CLIENT_ID}
