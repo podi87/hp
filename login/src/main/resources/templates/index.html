@@ -9,9 +9,9 @@
 <div class="container unauthenticated" th:unless="${authenticated}">
     <a href="/login">click here</a>
 </div>
-<div class="container authenticated" >
+<div class="container authenticated" th:if="${authenticated}">
     <div>
-        <p>Logged in as:</p><p>
+        <p>Logged in as:</p><p th:text="${name}">
     </div>
 </div>
 </body>
