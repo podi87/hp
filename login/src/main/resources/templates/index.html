@@ -7,8 +7,14 @@
 <body>
 <h1>LogIn</h1>
 <div class="container unauthenticated" th:unless="${authenticated}">
-    <a href="/login/facebook">click here</a>
+    <div>
+        With Facebook: <a href="/login/facebook">click here</a>
+    </div>
+    <div>
+        With Github: <a href="/login/github">click here</a>
+    </div>
 </div>
+
 <div class="container authenticated" th:if="${authenticated}">
     <div>
         <p>Logged in as:</p><p th:text="${name}">
